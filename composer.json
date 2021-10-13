@@ -5,7 +5,10 @@
     "autoload": {
         "psr-4": {
             "Behamin\\Support\\": "src/"
-        }
+        },
+        "files": [
+            "src/Helper/functions.php"
+        ]
     },
     "authors": [
         {
@@ -14,5 +17,10 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4|^8.0",
+        "laravel/framework": "^8.0",
+        "behamin/bresources": "^1.4"
+    }
 }

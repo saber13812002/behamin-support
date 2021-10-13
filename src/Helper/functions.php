@@ -1,0 +1,1 @@
+<?phpfunction isLocal(): bool{    return app()->isLocal();}function isTesting(): bool{    return app()->runningUnitTests();}function isLocalOrTesting(): bool{    return isLocal() || isTesting();}function isRestApi(): bool{    return Str::contains(request()->getUri(), '/api/');}
