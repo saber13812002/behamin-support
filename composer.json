@@ -7,7 +7,7 @@
             "Behamin\\Support\\": "src/"
         },
         "files": [
-            "src/Helper/functions.php"
+            "src/Helpers/functions.php"
         ]
     },
     "authors": [
@@ -22,5 +22,12 @@
         "php": "^7.4|^8.0",
         "laravel/framework": "^8.0",
         "behamin/bresources": "^1.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Behamin\\Support\\Providers\\BehaminSupportProvider"
+            ]
+        }
     }
 }
